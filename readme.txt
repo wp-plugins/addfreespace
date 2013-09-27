@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-記事上下に自由な記述ができるフリースペースを加えることができます。上下方向の位置調整も簡単にできます。主に広告リンクのためのスペースを確保することを意図しています。A/Bテストも可能。
+記事上下に自由な記述ができるフリースペースを加えることができます。上下方向の位置調整も簡単にできます。主に広告リンクのためのスペースを確保することを意図しています。A/Bテストも可能。詳しくは http://accountingse.net/2013/09/676/ を参照して下さい。
 
 The free space as for which free description is made to the report upper and lower sides can be added. 
 Justification of the up-and-down direction can also be simplified. 
