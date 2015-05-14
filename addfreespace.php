@@ -2,8 +2,8 @@
 /*
   Plugin Name: addfreespace
   Plugin URI: http://accountingse.net/2013/02/638/
-  Description: 記事をいつ書いたかを分析するプラグインです。This is plug-in which analyzes when posts were written.
-  Version: 0.1.2
+  Description: 記事上下に自由な記述ができるフリースペースを加えることができます。You can add freespace.
+  Version: 0.1.3
   Author: kazunii_ac
   Author URI: https://twitter.com/kazunii_ac
   License: GPL2
@@ -125,7 +125,6 @@ function addfreespace() {
         <div id="addfreespace_createdby">
             created by 
             <a href="https://twitter.com/kazunii_ac" target="_blank">
-                <img src="https://si0.twimg.com/profile_images/2074468470/_______mini.jpg" />
                 @kazunii_ac
             </a>
         </div>
@@ -268,10 +267,10 @@ function ret_row_simple($Arr) {  //['simple']を全部受け取る
         $RetHtml .= '        </SELECT>';
         $RetHtml .= '    </td>';
         $RetHtml .= '    <td>';
-        $RetHtml .= '        <input type="checkbox" name="row' . $i . '_disp_post_simple" value="1" id="row' . $i . '_post"' . ( $Row['displaypage']['post'] == '1' ? ' checked="checked"' : '' ) . '>';
-        $RetHtml .= '        <label for="row' . $i . '_post" class="label_of_post">単一投稿</label><br />';
-        $RetHtml .= '        <input type="checkbox" name="row' . $i . '_disp_page_simple" value="1" id="row' . $i . '_page"' . ( $Row['displaypage']['page'] == '1' ? ' checked="checked"' : '' ) . '>';
-        $RetHtml .= '        <label for="row' . $i . '_page" class="label_of_page">単一ページ</label><br />';
+        $RetHtml .= '        <input type="checkbox" name="row' . $i . '_disp_post_simple" value="1" id="row' . $i . '_post_simple"' . ( $Row['displaypage']['post'] == '1' ? ' checked="checked"' : '' ) . '>';
+        $RetHtml .= '        <label for="row' . $i . '_post_simple" class="label_of_post">単一投稿</label><br />';
+        $RetHtml .= '        <input type="checkbox" name="row' . $i . '_disp_page_simple" value="1" id="row' . $i . '_page_simple"' . ( $Row['displaypage']['page'] == '1' ? ' checked="checked"' : '' ) . '>';
+        $RetHtml .= '        <label for="row' . $i . '_page_simple" class="label_of_page">単一ページ</label><br />';
         $RetHtml .= '    </td>';
         $RetHtml .= '    <td style="display:none;">';    //本文のみ
         $RetHtml .= '        <SELECT name="row' . $i . '_title_content_simple">';
@@ -335,10 +334,10 @@ function ret_row_ab($Arr) {  //['simple']を全部受け取る
         $RetHtml .= '        </SELECT>';
         $RetHtml .= '    </td>';
         $RetHtml .= '    <td>';
-        $RetHtml .= '        <input type="checkbox" name="row' . $i . '_disp_post_ab" value="1" id="row' . $i . '_post"' . ( $Row['displaypage']['post'] == '1' ? ' checked="checked"' : '' ) . '>';
-        $RetHtml .= '        <label for="row' . $i . '_post" class="label_of_post">単一投稿</label><br />';
-        $RetHtml .= '        <input type="checkbox" name="row' . $i . '_disp_page_ab" value="1" id="row' . $i . '_page"' . ( $Row['displaypage']['page'] == '1' ? ' checked="checked"' : '' ) . '>';
-        $RetHtml .= '        <label for="row' . $i . '_page" class="label_of_page">単一ページ</label><br />';
+        $RetHtml .= '        <input type="checkbox" name="row' . $i . '_disp_post_ab" value="1" id="row' . $i . '_post_ab"' . ( $Row['displaypage']['post'] == '1' ? ' checked="checked"' : '' ) . '>';
+        $RetHtml .= '        <label for="row' . $i . '_post_ab" class="label_of_post">単一投稿</label><br />';
+        $RetHtml .= '        <input type="checkbox" name="row' . $i . '_disp_page_ab" value="1" id="row' . $i . '_page_ab"' . ( $Row['displaypage']['page'] == '1' ? ' checked="checked"' : '' ) . '>';
+        $RetHtml .= '        <label for="row' . $i . '_page_ab" class="label_of_page">単一ページ</label><br />';
         $RetHtml .= '    </td>';
         $RetHtml .= '    <td style="display:none;">';    //本文のみ
         $RetHtml .= '        <SELECT name="row' . $i . '_title_content_ab">';

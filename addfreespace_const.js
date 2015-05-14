@@ -22,10 +22,10 @@ function RetRowHtmlSimple(num,data){
     RowHtml += '        </SELECT>';
     RowHtml += '    </td>';
     RowHtml += '    <td>';
-    RowHtml += '        <input type="checkbox" name="row' + num + '_disp_post_simple" value="1" id="row' + num + '_post"' + ( data['displaypage']['post']=='1' ? ' checked="checked"' : '' ) + '>';
-    RowHtml += '        <label for="row' + num + '_post" class="label_of_post">単一投稿</label><br />';
-    RowHtml += '        <input type="checkbox" name="row' + num + '_disp_page_simple" value="1" id="row' + num + '_page"' + ( data['displaypage']['page']=='1' ? ' checked="checked"' : '' ) + '>';
-    RowHtml += '        <label for="row' + num + '_page" class="label_of_page">単一ページ</label><br />';
+    RowHtml += '        <input type="checkbox" name="row' + num + '_disp_post_simple" value="1" id="row' + num + '_post_simple"' + ( data['displaypage']['post']=='1' ? ' checked="checked"' : '' ) + '>';
+    RowHtml += '        <label for="row' + num + '_post_simple" class="label_of_post">単一投稿</label><br />';
+    RowHtml += '        <input type="checkbox" name="row' + num + '_disp_page_simple" value="1" id="row' + num + '_page_simple"' + ( data['displaypage']['page']=='1' ? ' checked="checked"' : '' ) + '>';
+    RowHtml += '        <label for="row' + num + '_page_simple" class="label_of_page">単一ページ</label><br />';
 /*
     RowHtml += '        <input type="checkbox" name="row' + num + '_disp_home" value="1" id="row' + num + '_home"' + ( data['displaypage']['home']=='1' ? ' checked="checked"' : '' ) + '>';
     RowHtml += '        <label for="row' + num + '_home" class="label_of_home">home</label><br />';
@@ -109,10 +109,12 @@ function RetRowHtmlAB(num,data){
     RowHtml += '        </SELECT>';
     RowHtml += '    </td>';
     RowHtml += '    <td>';
-    RowHtml += '        <input type="checkbox" name="row' + num + '_disp_post_ab" value="1" id="row' + num + '_post"' + ( data['displaypage']['post']=='1' ? ' checked="checked"' : '' ) + '>';
-    RowHtml += '        <label for="row' + num + '_post" class="label_of_post">単一投稿</label><br />';
-    RowHtml += '        <input type="checkbox" name="row' + num + '_disp_page_ab" value="1" id="row' + num + '_page"' + ( data['displaypage']['page']=='1' ? ' checked="checked"' : '' ) + '>';
-    RowHtml += '        <label for="row' + num + '_page" class="label_of_page">単一ページ</label><br />';
+    RowHtml += '        <input type="checkbox" name="row' + num + '_disp_post_ab" value="1" id="row' + num + '_post_ab"' + ( data['displaypage']['post']=='1' ? ' checked="checked"' : '' ) + '>';
+//    RowHtml += '        <label for="row' + num + '_post" class="label_of_post">単一投稿</label><br />';
+    RowHtml += '        <label for="row' + num + '_post_ab" class="label_of_post">単一投稿</label><br />';
+    RowHtml += '        <input type="checkbox" name="row' + num + '_disp_page_ab" value="1" id="row' + num + '_page_ab"' + ( data['displaypage']['page']=='1' ? ' checked="checked"' : '' ) + '>';
+//    RowHtml += '        <label for="row' + num + '_disp_page_ab" class="label_of_page">単一ページ</label><br />';
+    RowHtml += '        <label for="row' + num + '_page_ab" class="label_of_page">単一ページ</label><br />';
     RowHtml += '    </td>';
     RowHtml += '    <td style="display:none;">';    //本文のみ
     RowHtml += '        <SELECT name="row' + num + '_title_content_ab">';
